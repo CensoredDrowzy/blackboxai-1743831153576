@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MiniRoyaleCheat")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+137200d85bcb374ef2f4ed5a9020ab8997f41cd0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c57b48d072e4bd73bb0c96d1a59d2aea6d01685b")]
 [assembly: System.Reflection.AssemblyProductAttribute("MiniRoyaleCheat")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MiniRoyaleCheat")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
