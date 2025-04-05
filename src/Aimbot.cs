@@ -1,7 +1,7 @@
 using System;
 using System.Numerics;
 using System.Threading;
-using WindowsInput;
+using InputSimulatorCore.Native;
 
 namespace MiniRoyaleCheat
 {
