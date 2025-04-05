@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "InputSimulatorCore/1.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/WindowsInput.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/WindowsInput.dll": {}
+        }
+      },
       "Microsoft.AspNetCore/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -2024,19 +2033,22 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
-      },
-      "WindowsInput/6.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net461/WindowsInput.dll": {}
-        },
-        "runtime": {
-          "lib/net461/WindowsInput.dll": {}
-        }
       }
     }
   },
   "libraries": {
+    "InputSimulatorCore/1.0.5": {
+      "sha512": "mLYv9geqp8gG0HjvmbhL5+0v8LmGBgawOS3FHRtK0tGYp0VWfLe8lhYYXUH+vZP1Su+0v0HJQjBx5Jy2wbtYBQ==",
+      "type": "package",
+      "path": "inputsimulatorcore/1.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "inputsimulatorcore.1.0.5.nupkg.sha512",
+        "inputsimulatorcore.nuspec",
+        "lib/netstandard2.0/WindowsInput.dll"
+      ]
+    },
     "Microsoft.AspNetCore/2.2.0": {
       "sha512": "Bs75iht4lXS8uVWy/Cbsr9i0m2jRtnrfPEWU+6t0dQTZcJEfF9b7G2F7XvstLFWkAKSgYRzFkAwi/KypY0Qtew==",
       "type": "package",
@@ -5146,26 +5158,14 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
-    },
-    "WindowsInput/6.0.0": {
-      "sha512": "U5EMP8bWFENqjh6qMtnHFv4dWjYV6o+pHaO+znjbMZtx1qW0PAjCCo0Do4moSlkDK/Klsfzc596/MH8GN/dMcA==",
-      "type": "package",
-      "path": "windowsinput/6.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net461/WindowsInput.dll",
-        "windowsinput.6.0.0.nupkg.sha512",
-        "windowsinput.nuspec"
-      ]
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "InputSimulatorCore >= 1.0.5",
       "Microsoft.AspNetCore >= 2.2.0",
       "SharpDX >= 4.2.0",
-      "SharpDX.Direct3D11 >= 4.2.0",
-      "WindowsInput >= 6.0.0"
+      "SharpDX.Direct3D11 >= 4.2.0"
     ]
   },
   "packageFolders": {
@@ -5210,6 +5210,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "InputSimulatorCore": {
+            "target": "Package",
+            "version": "[1.0.5, )"
+          },
           "Microsoft.AspNetCore": {
             "target": "Package",
             "version": "[2.2.0, )"
@@ -5221,10 +5225,6 @@
           "SharpDX.Direct3D11": {
             "target": "Package",
             "version": "[4.2.0, )"
-          },
-          "WindowsInput": {
-            "target": "Package",
-            "version": "[6.0.0, )"
           }
         },
         "imports": [
@@ -5246,17 +5246,5 @@
         "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'WindowsInput 6.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
-      "libraryId": "WindowsInput",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  }
 }
