@@ -5163,7 +5163,6 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "Microsoft.AspNetCore >= 2.2.0",
-      "Microsoft.AspNetCore.Hosting.Abstractions >= 2.2.0",
       "SharpDX >= 4.2.0",
       "SharpDX.Direct3D11 >= 4.2.0",
       "WindowsInput >= 6.0.0"
@@ -5212,10 +5211,6 @@
         "targetAlias": "net8.0",
         "dependencies": {
           "Microsoft.AspNetCore": {
-            "target": "Package",
-            "version": "[2.2.0, )"
-          },
-          "Microsoft.AspNetCore.Hosting.Abstractions": {
             "target": "Package",
             "version": "[2.2.0, )"
           },
