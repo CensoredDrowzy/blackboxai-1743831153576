@@ -1,0 +1,5 @@
+/project/sandbox/user-workspace/src/obj/Debug/net8.0/MiniRoyaleCheat.csproj.AssemblyReference.cache
+/project/sandbox/user-workspace/src/obj/Debug/net8.0/MiniRoyaleCheat.GeneratedMSBuildEditorConfig.editorconfig
+/project/sandbox/user-workspace/src/obj/Debug/net8.0/MiniRoyaleCheat.AssemblyInfoInputs.cache
+/project/sandbox/user-workspace/src/obj/Debug/net8.0/MiniRoyaleCheat.AssemblyInfo.cs
+/project/sandbox/user-workspace/src/obj/Debug/net8.0/MiniRoyaleCheat.csproj.CoreCompileInputs.cache
